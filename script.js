@@ -631,7 +631,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add life tasks to table
         appData.lifeTasks.forEach(task => {
             const percentage = ((task.score / totalLifeScore) * 100).toFixed(1);
-            const hours = ((
 const hours = ((task.score / totalLifeScore) * appData.timeData.adjustedLifeHours).toFixed(1);
             
             const row = document.createElement('tr');
