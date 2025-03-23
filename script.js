@@ -1,3 +1,4 @@
+<script>
 // Wait for the DOM to be fully loaded
 document.addEventListener('DOMContentLoaded', function() {
     // Store all app data
@@ -90,7 +91,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Navigation buttons
     const getStartedBtn = document.getElementById('get-started-btn');
-    const backToWelcomeBtn = document.getElementById('back-to-calculator-btn');
     const continueToTasksBtn = document.getElementById('continue-to-tasks-btn');
     const backToCalculatorBtn = document.getElementById('back-to-calculator-btn');
     const continueToLifeTasksBtn = document.getElementById('continue-to-life-tasks-btn');
@@ -631,7 +631,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add life tasks to table
         appData.lifeTasks.forEach(task => {
             const percentage = ((task.score / totalLifeScore) * 100).toFixed(1);
-const hours = ((task.score / totalLifeScore) * appData.timeData.adjustedLifeHours).toFixed(1);
+            const hours = ((task.score / totalLifeScore) * appData.timeData.adjustedLifeHours).toFixed(1);
             
             const row = document.createElement('tr');
             row.innerHTML = `
@@ -661,3 +661,4 @@ const hours = ((task.score / totalLifeScore) * appData.timeData.adjustedLifeHour
     updateWorkTaskScores();
     updateLifeTaskScores();
 });
+</script>
