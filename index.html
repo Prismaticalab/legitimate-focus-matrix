@@ -137,7 +137,582 @@
                 </div>
             </div>
         </div>
+<!-- Work Tasks Assessment Screen (initially hidden) -->
+<div id="work-tasks-screen" class="container mx-auto px-4 py-12 hidden">
+    <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8">
+        <h1 class="text-3xl font-bold text-center text-blue-800 mb-6">Work Tasks Assessment</h1>
+        <p class="text-gray-600 text-center mb-8">
+            Evaluate your work tasks based on their current and future value.
+        </p>
+        
+        <div class="mb-6">
+            <label class="block text-gray-700 mb-2 font-semibold">Work Task Name:</label>
+            <input type="text" id="work-task-name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter task name...">
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <!-- Value Right Now Questions -->
+            <div>
+                <h2 class="text-xl font-semibold mb-4 text-blue-700">Value Right Now</h2>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-now form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Revenue Generation: Does this directly generate revenue now?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-now form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Stakeholder Satisfaction: Does this immediately satisfy important stakeholders?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-now form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Critical Operations: Is this essential for maintaining current operations?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-now form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Team Performance: Does this improve immediate team effectiveness?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-now form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Resource Efficiency: Does this save significant time or money right now?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-now form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Problem Resolution: Does this solve an urgent work problem?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-now form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Professional Visibility: Does this create immediate positive visibility?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-now form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Deadline Pressure: Does completing this relieve significant deadline pressure?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-now form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Collaboration Value: Does this strengthen important work relationships?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-now form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Work Flow: Does this make your current workflow smoother or more efficient?</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Value in Future Questions -->
+            <div>
+                <h2 class="text-xl font-semibold mb-4 text-blue-700">Value in the Future</h2>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-future form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Career Advancement: Will this significantly advance your career?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-future form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Skill Development: Does this build valuable professional skills?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-future form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Network Building: Will this create important professional connections?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-future form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Market Position: Does this improve long-term market position?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-future form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Strategic Alignment: Does this advance important strategic goals?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-future form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Innovation Potential: Could this lead to significant innovation?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-future form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Scalable Impact: Will the benefits compound or scale over time?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-future form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Industry Recognition: Could this lead to recognition in your field?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-future form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Future Proofing: Does this help adapt to future market changes?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="work-value-future form-checkbox h-5 w-5 text-blue-600" value="1">
+                            <span class="ml-2 text-gray-700">Professional Legacy: Will this contribute to your professional legacy?</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Score Display -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-gray-100 rounded-lg mb-8">
+            <div class="text-center">
+                <div class="text-gray-700 font-semibold">Value Now Score:</div>
+                <div class="text-3xl font-bold text-blue-600" id="work-value-now-score">0</div>
+                <div class="text-sm text-gray-500">out of 10</div>
+            </div>
+            
+            <div class="text-center">
+                <div class="text-gray-700 font-semibold">Value Future Score:</div>
+                <div class="text-3xl font-bold text-blue-600" id="work-value-future-score">0</div>
+                <div class="text-sm text-gray-500">out of 10</div>
+            </div>
+            
+            <div class="text-center">
+                <div class="text-gray-700 font-semibold">Total Task Value:</div>
+                <div class="text-3xl font-bold text-blue-600" id="work-task-total-score">0</div>
+                <div class="text-sm text-gray-500">out of 100</div>
+            </div>
+        </div>
+        
+        <!-- Task List -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Work Tasks List</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2 border-b-2 border-gray-200 bg-gray-100 text-left">Task</th>
+                            <th class="px-4 py-2 border-b-2 border-gray-200 bg-gray-100 text-center">Value Now</th>
+                            <th class="px-4 py-2 border-b-2 border-gray-200 bg-gray-100 text-center">Value Future</th>
+                            <th class="px-4 py-2 border-b-2 border-gray-200 bg-gray-100 text-center">Score</th>
+                            <th class="px-4 py-2 border-b-2 border-gray-200 bg-gray-100 text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="work-tasks-table">
+                        <!-- Tasks will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <button id="add-work-task-btn" class="mt-4 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                Add Task
+            </button>
+        </div>
+        
+        <div class="flex justify-between">
+            <button id="back-to-calculator-btn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg transition duration-200">
+                Back
+            </button>
+            <button id="continue-to-life-tasks-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                Continue to Life Tasks
+            </button>
+        </div>
+    </div>
+</div>
 
+<!-- Life Tasks Assessment Screen (initially hidden) -->
+<div id="life-tasks-screen" class="container mx-auto px-4 py-12 hidden">
+    <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8">
+        <h1 class="text-3xl font-bold text-center text-green-800 mb-6">Life Tasks Assessment</h1>
+        <p class="text-gray-600 text-center mb-8">
+            Evaluate your life activities based on their current and future value.
+        </p>
+        
+        <div class="mb-6">
+            <label class="block text-gray-700 mb-2 font-semibold">Life Activity Name:</label>
+            <input type="text" id="life-task-name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500" placeholder="Enter activity name...">
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+            <!-- Value Right Now Questions -->
+            <div>
+                <h2 class="text-xl font-semibold mb-4 text-green-700">Value Right Now</h2>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-now form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Joy & Pleasure: Does this bring immediate joy or satisfaction?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-now form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Emotional Wellbeing: Does this improve your mood or emotional state?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-now form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Physical Health: Does this benefit your physical health today?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-now form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Relationship Quality: Does this strengthen important relationships?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-now form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Personal Growth: Do you learn or grow during this activity?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-now form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Self-Expression: Does this allow you to express yourself authentically?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-now form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Life Balance: Does this restore balance to your life?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-now form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Present Moment: Does this help you be fully present and engaged?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-now form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Basic Needs: Does this fulfill important basic needs?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-now form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Stress Relief: Does this effectively reduce stress or pressure?</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Value in Future Questions -->
+            <div>
+                <h2 class="text-xl font-semibold mb-4 text-green-700">Value in the Future</h2>
+                
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-future form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Health Investment: Will this benefit your long-term health?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-future form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Relationship Building: Will this strengthen bonds long-term?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-future form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Financial Security: Does this improve financial security?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-future form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Life Skills: Does this build skills for the long-term?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-future form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Personal Growth: Will this contribute to long-term development?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-future form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Memory Creation: Will this create cherished memories?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-future form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Life Goals: Does this move you toward important life goals?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-future form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Character Development: Does this help you become who you aspire to be?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-future form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Future Happiness: Will this increase future happiness?</span>
+                        </label>
+                    </div>
+                    
+                    <div class="flex items-start">
+                        <label class="inline-flex items-center">
+                            <input type="checkbox" class="life-value-future form-checkbox h-5 w-5 text-green-600" value="1">
+                            <span class="ml-2 text-gray-700">Personal Legacy: Does this contribute to a legacy you'll be proud of?</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Score Display -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 bg-gray-100 rounded-lg mb-8">
+            <div class="text-center">
+                <div class="text-gray-700 font-semibold">Value Now Score:</div>
+                <div class="text-3xl font-bold text-green-600" id="life-value-now-score">0</div>
+                <div class="text-sm text-gray-500">out of 10</div>
+            </div>
+            
+            <div class="text-center">
+                <div class="text-gray-700 font-semibold">Value Future Score:</div>
+                <div class="text-3xl font-bold text-green-600" id="life-value-future-score">0</div>
+                <div class="text-sm text-gray-500">out of 10</div>
+            </div>
+            
+            <div class="text-center">
+                <div class="text-gray-700 font-semibold">Total Task Value:</div>
+                <div class="text-3xl font-bold text-green-600" id="life-task-total-score">0</div>
+                <div class="text-sm text-gray-500">out of 100</div>
+            </div>
+        </div>
+        
+        <!-- Task List -->
+        <div class="mb-8">
+            <h2 class="text-xl font-semibold mb-4">Life Activities List</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="min-w-full bg-white border">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-2 border-b-2 border-gray-200 bg-gray-100 text-left">Activity</th>
+                            <th class="px-4 py-2 border-b-2 border-gray-200 bg-gray-100 text-center">Value Now</th>
+                            <th class="px-4 py-2 border-b-2 border-gray-200 bg-gray-100 text-center">Value Future</th>
+                            <th class="px-4 py-2 border-b-2 border-gray-200 bg-gray-100 text-center">Score</th>
+                            <th class="px-4 py-2 border-b-2 border-gray-200 bg-gray-100 text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="life-tasks-table">
+                        <!-- Tasks will be added here dynamically -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <button id="add-life-task-btn" class="mt-4 bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                Add Activity
+            </button>
+        </div>
+        
+        <div class="flex justify-between">
+            <button id="back-to-work-tasks-btn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg transition duration-200">
+                Back
+            </button>
+            <button id="continue-to-results-btn" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                View Results
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Results/Matrix Screen (initially hidden) -->
+<div id="results-screen" class="container mx-auto px-4 py-12 hidden">
+    <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-8">
+        <h1 class="text-3xl font-bold text-center text-purple-800 mb-6">Legitimate Focus Matrix</h1>
+        <p class="text-gray-600 text-center mb-8">
+            Here's how your time should be allocated based on the value matrix.
+        </p>
+        
+        <!-- Filter Controls -->
+        <div class="flex justify-center space-x-4 mb-8">
+            <button id="all-tasks-btn" class="px-4 py-2 bg-gray-800 text-white font-bold rounded-md">
+                All Tasks
+            </button>
+            <button id="work-tasks-btn" class="px-4 py-2 bg-blue-100 text-blue-800 font-bold rounded-md">
+                Work Tasks
+            </button>
+            <button id="life-tasks-btn" class="px-4 py-2 bg-green-100 text-green-800 font-bold rounded-md">
+                Life Tasks
+            </button>
+        </div>
+        
+        <!-- Matrix Visualization -->
+        <div class="relative w-full h-96 bg-gray-100 rounded-lg mb-8 overflow-hidden" id="matrix-container">
+            <!-- Quadrant labels -->
+            <div class="absolute top-0 left-0 w-1/2 h-1/2 border-r border-b border-gray-300 flex items-center justify-center bg-yellow-50 opacity-70 pointer-events-none">
+                <span class="text-lg text-gray-700 font-semibold">LIMIT</span>
+            </div>
+            <div class="absolute top-0 right-0 w-1/2 h-1/2 border-b border-gray-300 flex items-center justify-center bg-green-50 opacity-70 pointer-events-none">
+                <span class="text-lg text-gray-700 font-semibold">FOCUS</span>
+            </div>
+            <div class="absolute bottom-0 left-0 w-1/2 h-1/2 border-r border-gray-300 flex items-center justify-center bg-red-50 opacity-70 pointer-events-none">
+                <span class="text-lg text-gray-700 font-semibold">AVOID</span>
+            </div>
+            <div class="absolute bottom-0 right-0 w-1/2 h-1/2 flex items-center justify-center bg-blue-50 opacity-70 pointer-events-none">
+                <span class="text-lg text-gray-700 font-semibold">INVEST</span>
+            </div>
+            
+            <!-- Axis labels -->
+            <div class="absolute top-1/2 left-2 transform -translate-y-1/2 -rotate-90 pointer-events-none">
+                <span class="text-xs font-semibold">Value in Future</span>
+            </div>
+            <div class="absolute bottom-2 left-1/2 transform -translate-x-1/2 pointer-events-none">
+                <span class="text-xs font-semibold">Value Right Now</span>
+            </div>
+            
+            <!-- Task bubbles will be added here dynamically -->
+            <div id="matrix-bubbles"></div>
+        </div>
+        
+        <!-- Task Details -->
+        <div id="task-details" class="w-full p-4 bg-gray-100 rounded-lg mb-8 hidden">
+            <h2 class="text-xl font-bold mb-2" id="detail-task-name">Task Name</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <p><span class="font-medium">Category:</span> <span id="
+                            <p><span class="font-medium">Category:</span> <span id="detail-task-category">Work</span></p>
+                    <p><span class="font-medium">Value Now:</span> <span id="detail-value-now">0</span>/10</p>
+                    <p><span class="font-medium">Value Future:</span> <span id="detail-value-future">0</span>/10</p>
+                    <p><span class="font-medium">Total Score:</span> <span id="detail-total-score">0</span>/100</p>
+                </div>
+                <div>
+                    <p><span class="font-medium">Quadrant:</span> <span id="detail-quadrant">Focus</span></p>
+                    <p><span class="font-medium">Priority Percentage:</span> <span id="detail-percentage">0</span>%</p>
+                    <p><span class="font-medium">Recommended Hours/Week:</span> <span id="detail-hours">0</span> hrs</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Summary Tables -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <!-- Work Tasks Table -->
+            <div class="bg-white p-4 rounded-lg shadow-md border border-blue-100">
+                <h2 class="text-xl font-bold mb-4 text-blue-600">Work Tasks</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b-2">
+                                <th class="text-left py-2">Task</th>
+                                <th class="text-center py-2">Score</th>
+                                <th class="text-center py-2">%</th>
+                                <th class="text-right py-2">Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody id="results-work-tasks">
+                            <!-- Work tasks will be added here dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Life Tasks Table -->
+            <div class="bg-white p-4 rounded-lg shadow-md border border-green-100">
+                <h2 class="text-xl font-bold mb-4 text-green-600">Life Tasks</h2>
+                <div class="overflow-x-auto">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b-2">
+                                <th class="text-left py-2">Activity</th>
+                                <th class="text-center py-2">Score</th>
+                                <th class="text-center py-2">%</th>
+                                <th class="text-right py-2">Hours</th>
+                            </tr>
+                        </thead>
+                        <tbody id="results-life-tasks">
+                            <!-- Life tasks will be added here dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Export Options -->
+        <div class="flex justify-between">
+            <button id="back-to-life-tasks-btn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg transition duration-200">
+                Back
+            </button>
+            <button id="start-over-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded-lg transition duration-200">
+                Start Over
+            </button>
+        </div>
+    </div>
+</div>                                          
         <!-- Additional screens will be added in the next steps -->
     </div>
 
